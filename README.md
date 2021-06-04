@@ -58,3 +58,7 @@ Suivre ensuite les indications directement sur le terminal.
 ## Exemple Discord : 
 
 ![alt text](https://github.com/djsfabio/Station-Meteo-Arduino/blob/master/Discord.jpg?raw=true)
+
+# Image du montage final : 
+
+![alt text](https://github.com/djsfabio/Station-Meteo-Arduino/blob/master/ImageMontage.JPG?raw=true)
