@@ -55,7 +55,7 @@ python MonitorAdafruitRaspberry.py
 ```
 Suivre ensuite les indications directement sur le terminal. 
 
-## Exemple Discord : 
+# Exemple Discord : 
 
 ![alt text](https://github.com/djsfabio/Station-Meteo-Arduino/blob/master/Discord.jpg?raw=true)
 
