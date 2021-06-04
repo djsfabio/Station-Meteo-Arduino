@@ -1,0 +1,6 @@
+selenium
+termcolor
+discord_notify
+pyfiglet
+webdriver_manager
+pyvirtualdisplay
