@@ -16,6 +16,12 @@ notifier = dn.Notifier(str(input()))
 print("Veuillez entrer le nombre de secondes entre chaque ping.")
 tempsDattente = int(input())
 
+print("Veuillez entrer votre pseudo Adafruit : ")
+usernameAdafruit = str(input())
+
+print("Veuillez entrer votre mot de passe Adafruit : ")
+passwordAdafruit = str(input())
+
 
 def main ():
   notifier.send("@everyone Lancement du scan météo via Adafruit toutes les " + str(tempsDattente) + " secondes.", print_message=False)
@@ -28,15 +34,15 @@ def main ():
     while True:
       if(pasConnecte == 1):
         driver.get("https://accounts.adafruit.com/users/sign_in")
-        driver.find_element_by_id("user_login").send_keys('ICI_LOGIN')
+        driver.find_element_by_id("user_login").send_keys(usernameAdafruit)
         elementMDP = driver.find_element_by_id("user_password")
-        elementMDP.send_keys('ICI_PASSWORD')
+        elementMDP.send_keys(passwordAdafruit)
         elementMDP.submit()
         time.sleep(5)
         pasConnecte = 0
-        driver.get("https://io.adafruit.com/fabiodjs/dashboards")
+        driver.get("https://io.adafruit.com/" + usernameAdafruit + "/dashboards")
         time.sleep(5)
-        driver.get("https://io.adafruit.com/fabiodjs/feeds")
+        driver.get("https://io.adafruit.com/" + usernameAdafruit + "/feeds")
         time.sleep(5)
         notificationAvecValeur(driver)
       else:  
